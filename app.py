@@ -4,7 +4,7 @@ import numpy as np
 
 def main():
     background = """<div style = 'background-colour:black'; padding:13px>
-                    <h2 style = 'colour:white'>Airplane Passenger Satisfaction Prediction</h2>
+                    <h2 style = 'colour:white'>Prediction of Passenger Satisfaction</h2>
                     </div>"""
     st.markdown(background, unsafe_allow_html=True)
 
