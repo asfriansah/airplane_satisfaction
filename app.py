@@ -61,14 +61,12 @@ with open('model/xgboost1.pkl','rb') as file:
     model = pickle.load(file)
 
 def predict(customer,clas,gender,age,travel,flight,checkin,arrival):
-    cust = lambda a : 0 if (a == 'Disloyal Customer') else 1
-    cust = cust(customer)
     cust = 0 if customer == 'Disloyal Customer' else 1
-    cls = 0 if clas == 'Economy' else 1 if clas == 'Economy Plus' else 2
+    clss = 0 if clas == 'Economy' else 1 if clas == 'Economy Plus' else 2
     sex = 0 if gender == 'Male' else 1
     trav = 0 if travel == 'Personal Travel' else 1
         
-    predictor = np.array([cust,cls,sex,age,trav,flight,checkin,arrival])
+    predictor = np.array([cust,clss,sex,age,trav,flight,checkin,arrival])
     predictor1 = predictor.reshape(1, -1) 
     predictor1 = predictor1.astype(int)
     predictor_scal = scal.transform(predictor1)
