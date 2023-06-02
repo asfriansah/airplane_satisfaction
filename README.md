@@ -9,17 +9,28 @@ So it is hoped that in the future it can predict whether passengers are satisfie
 
 Dataset Overview:
 
-Customer Type: is the type of customer/passenger loyal or disloyal?
+Customer Type: is the type of customer/passenger loyal or disloyal
+
 Class: type of cabin class whether economy, economy plus, or business class.
+
 Gender: gender (male or female).
+
 Age: the age of the passenger.
+
 Type of Travel: the type of trip whether business or personal.
+
 Flight Distance: flight mileage.
+
 Checkin Service: service when checking in with a score of 0 - 5.
+
 Departure Delay in Minutes: departure delay in minutes.
+
 Arrival Delay in Minutes: arrival delay in minutes.
+
 Satisfaction: passenger satisfaction (satisfied or dissatisfied)
+
 Feature 'satisfaction' will be our target variable.
+
 
 Result:
 
